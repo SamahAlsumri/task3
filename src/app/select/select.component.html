@@ -1,0 +1,12 @@
+<section class="container">
+    <div class="container">
+        <h1> HTML quize</h1>
+      <h4>Select User</h4>
+    
+       <select [(ngModel)]="selectedUser">
+        <option *ngFor="let user of users" [value]="user.id">{{ user.name }}</option>
+       </select>
+        <button [disabled]="!selectedUser" (click)="startQuestionnaire()">Next</button>
+    </div><br>
+    <img src="\assets\img\3.jpg" height="400px" width="800px">
+</section>
